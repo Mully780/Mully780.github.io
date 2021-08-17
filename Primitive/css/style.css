@@ -217,16 +217,16 @@ header #promo {
     width: 32%;
 }
 
-.featured-product-1 {
+#featured-product-1 {
     width: 100%;
     height: 420px;
-    background: url('https://cdn.shopify.com/s/files/1/0342/5665/products/PAPFA2188-SASUKEBLADEHOOD-BLK-B_1024x1024.jpg?v=1623701564');
+    background: url('https://cdn.shopify.com/s/files/1/0342/5665/products/PAPFA2171-SASUKEBLADETEE-BLK-B_1024x1024.jpg?v=1623695662');
     background-position: center;
     background-size: 24rem;
     background-repeat: no-repeat;
 }
 
-.featured-product-2 {
+#featured-product-2 {
     width: 100%;
     height: 420px;
     background: url('https://cdn.shopify.com/s/files/1/0342/5665/products/PA321A124-SASUKEBLADEFLAG-BLK_1024x1024.jpg?v=1627512140');
