@@ -11,12 +11,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
         rel="stylesheet">
     <script type='text/javascript' src='./javascript/randomProduct.js'></script>
+    <script type='text/javascript' src='./javascript/open-close-sidemenu.js'></script>
     <title>Primitive Skateboarding</title>
 </head>
 
 <body>
     <header>
-
+        
         <div class='desktop-header'>
             <p id='promo'>FREE SHIPPING ON ALL ORDERS OVER 75us</p>
             <nav class='desktop-nav'>
@@ -24,8 +25,92 @@
                 <div class='nav-left'>
                     <img id='nav-logo'
                         src='https://cdn.shopify.com/s/files/1/0342/5665/files/Primitivelogo_ea7fc8fb-f83b-4c00-8344-99e0d2091af5_299x89.jpg?v=1628100255' />
-                    <a id='shop-link' href='https://primitiveskate.com/#'>SHOP<img id='down-arrow'
-                            src='./images/down-arrow-svgrepo-com.svg' /></a>
+                    <div class="navbar">
+                        <div class="dropdown">
+                            <button class="dropbtn">Shop<img id='down-arrow' src='./images/down-arrow-svgrepo-com.svg'>
+                                <i class="fa fa-caret-down"></i></button>
+
+                            <div class="dropdown-content">
+                                <div class='list-grid-container'>
+                                    <ul class='shop-links-list' id='hardgoods'>
+                                        <li id='list-title-header'>Hardgoods</li>
+                                        <li><a href='https://primitiveskate.com/collections/decks'>Decks</a></li>
+                                        <li><a
+                                                href='https://primitiveskate.com/collections/complete-skateboards'>Completes</a>
+                                        </li>
+                                        <li><a href='https://primitiveskate.com/collections/wheels'>Wheels</a></li>
+                                        <li><a href='https://primitiveskate.com/collections/griptape'>Griptape</a></li>
+                                        <li><a
+                                                href='https://primitiveskate.com/collections/skate-accessories'>Accessories</a>
+                                        </li>
+                                    </ul>
+                                    <ul class='shop-links-list' id='mens-list'>
+                                        <li id='list-title-header'>Mens</li>
+                                        <li><a href='https://primitiveskate.com/collections/t-shirts'>Tees</a></li>
+                                        <li><a href='https://primitiveskate.com/collections/face-masks'>Face Masks</a>
+                                        </li>
+                                        <li><a href='https://primitiveskate.com/collections/sweatshirts'>Sweatshirts</a>
+                                        </li>
+                                        <li><a href='https://primitiveskate.com/collections/jackets'>Jackets</a></li>
+                                        <li><a href='https://primitiveskate.com/collections/hats'>Headwear</a></li>
+                                        <li><a href='https://primitiveskate.com/collections/tops'>Tops</a></li>
+                                        <li><a href='https://primitiveskate.com/collections/bottoms'>Bottoms</a></li>
+                                        <li><a href='https://primitiveskate.com/collections/accessories'>Accessories</a>
+                                        </li>
+                                        <li><a href='https://primitiveskate.com/collections/sale'>Sale</a></li>
+                                    </ul>
+                                    <ul class='shop-links-list' id='womens-list'>
+                                        <li id='list-title-header'>Womens</li>
+                                        <li><a href='https://primitiveskate.com/collections/womens-t-shirts'>Tees</a>
+                                        </li>
+                                        <li><a href='https://primitiveskate.com/collections/face-masks'>Face Masks</a>
+                                        </li>
+                                        <li><a href='https://primitiveskate.com/collections/womens-fleece'>Fleece</a>
+                                        </li>
+                                        <li><a href='https://primitiveskate.com/collections/womens-bottoms'>Bottoms</a>
+                                        </li>
+                                        <li><a href='https://primitiveskate.com/collections/hats'>Headwear</a></li>
+                                        <li><a href='https://primitiveskate.com/collections/accessories'>Accessories</a>
+                                        </li>
+                                    </ul>
+                                    <ul class='shop-links-list' id='youth-list'>
+                                        <li id='list-title-header'>Youth</li>
+                                        <li><a
+                                                href='https://primitiveskate.com/collections/young-mens-apparel'>Apparel</a>
+                                        </li>
+                                        <li><a href='https://primitiveskate.com/collections/hats'>Headwear</a></li>
+                                    </ul>
+                                    <ul class='shop-links-list' id='collections-list-1'>
+                                        <li id='list-title-header'>Collections</li>
+                                        <li><a href='https://primitiveskate.com/collections/naruto-3'>Naruto Shipudden
+                                                3</a></li>
+                                        <li><a href='https://primitiveskate.com/collections/fall21'>Fall 2021</a></li>
+                                        <li><a href='https://primitiveskate.com/collections/generation'>Generations</a>
+                                        </li>
+                                        <li><a href='https://primitiveskate.com/collections/lunar'>Lunar</a></li>
+                                        <li><a href='https://primitiveskate.com/collections/champion-2021'>Champion
+                                                2021</a></li>
+                                        <li><a href='https://primitiveskate.com/collections/summer-21'>Summer 21</a>
+                                        </li>
+                                    </ul>
+                                    <ul class='shop-links-list' id='collections-list-2'>
+                                        <li id='list-title-header'>&nbsp;</li>
+                                        <li><a href='https://primitiveskate.com/collections/dragon-ball-super-2'>Dragon
+                                                Ball Super Drop 2</a></li>
+                                        <li><a href='https://primitiveskate.com/collections/kikkoman'>Kikkoman</a></li>
+                                        <li><a href='https://primitiveskate.com/collections/regional-2021'>Regional</a>
+                                        </li>
+                                        <li><a href='https://primitiveskate.com/collections/marvel2'>Primitive x Marvel
+                                                2</a></li>
+                                        <li><a href='https://primitiveskate.com/collections/goku-black-rose'>Goku Black
+                                                Rose</a></li>
+                                        <li><a href='https://primitiveskate.com/collections/sailormoon'>Sailor Moon</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <a id='news-link' href='https://primitiveskate.com/blogs/news'>NEWS</a>
                     <a id='team-link' href='https://primitiveskate.com/pages/team'>TEAM</a>
                     <a id='videos-link' href='http://videos.primitiveskate.com/'>VIDEOS</a>
@@ -44,9 +129,10 @@
         </div>
 
         <div class='mobile-header'>
+            <p id='mobile-promo'>FREE SHIPPING ON ALL ORDERS OVER 75us</p>
             <nav class='mobile-nav'>
                 <div class='mobile-left'>
-                    <img class='nav-icons' id='mobile-menu-icon' src='./images/menu-svgrepo-com.svg'>
+                    <img onclick="openNav()" class='nav-icons' id='mobile-menu-icon' src='./images/menu-svgrepo-com.svg'>
                     <img class='nav-icons' id='mobile-search-icon' src='./images/search-svgrepo-com.svg'>
                 </div>
                 <div class='mobile-center'>
@@ -61,6 +147,22 @@
                     <p id='shipping'>SHIPPING TO</p><img id='can-icon' src='images/ca.png'>
                 </div>
             </nav>
+        </div>
+
+        <div id='mobile-side-menu'>
+            <div class='mobile-nav-panel-wrapper' id='mobile-nav-side-panel'>
+                <a class="closebtn" id='exit-button' onclick="closeNav()"><img src='./images/x-svgrepo-com.svg'></a>
+                <div class='mobile-nav-panel-content'>
+                    <img id='plus' src='./images/plus-svgrepo-com.svg'>
+                    <ul class='mobile-nav-panel-list'>
+                        <li><a href=''>Shop</a></li>
+                        <li><a href='https://primitiveskate.com/blogs/news'>News</a></li>
+                        <li><a href='https://primitiveskate.com/pages/team'>Team</a></li>
+                        <li id='mobile-nav-panel-safety'><a href='http://videos.primitiveskate.com/'>Videos</a></li>
+                    </ul>
+                </div>
+
+            </div>
         </div>
     </header>
 

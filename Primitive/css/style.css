@@ -13,8 +13,9 @@ body {
     margin: 0;
 }
 
+
 /* Desktop Header Rules */
-header #promo {
+#promo {
     text-align: center;
     background-color: black;
     color: white;
@@ -55,6 +56,7 @@ header #promo {
 #down-arrow {
     width: .9rem;
     padding-left: 4px;
+    padding-right: 10px;
 }
 
 #shop-link,
@@ -104,6 +106,96 @@ header #promo {
     display: none;
 }
 
+/* Styling rules for drop down shop menu */
+/* Links inside the navbar */
+.navbar {
+    float: left;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    overflow: hidden;
+    font-family: 'Oswald';
+    text-transform: uppercase;
+}
+
+/* The dropdown container */
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+    font-size: .9rem;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    color: black;
+    background-color: inherit;
+    font-family: inherit;
+    /* Important for vertical align on mobile phones */
+    margin: 0;
+    /* Important for vertical align on mobile phones */
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 69px;
+    background-color: white;
+    width: 100%;
+    height: 427px;
+    border-bottom: 1px solid black;
+    z-index: 1;
+}
+
+.list-grid-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    width: 95%;
+    margin: 0 auto;
+}
+
+.shop-links-list {
+    list-style-type: none;
+    padding-top: 20px;
+    padding-right: 5%;
+    padding-left: 2%;
+    min-width: 137px;
+}
+
+#list-title-header {
+    padding-bottom: 20px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    line-height: 180%;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+    text-decoration: underline;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#mobile-side-menu, #mobile-promo {
+    display: none;
+}
+
 /* End of Header Rules */
 
 /* Media queries for header */
@@ -112,12 +204,22 @@ header #promo {
         display: none;
     }
 
+    #mobile-promo {
+        text-align: center;
+        background-color: black;
+        color: white;
+        font-size: .9rem;
+        height: 20px;
+        width: 100%;
+        margin: 0;
+        display: block;
+    }
+
     .mobile-header {
-        display: flex;
         width: 100%;
         height: auto;
         position: fixed;
-        z-index: 100;
+        z-index: 1;
         background: white;
     }
 
@@ -165,6 +267,77 @@ header #promo {
     #shipping {
         font-size: .9rem;
     }
+
+    /* Onclick of menu = side panel */
+.mobile-nav-panel-wrapper {
+    background-color: white;
+    position: fixed;
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Stay on top */
+    top: 20px;
+    /* Stay at the top */
+    left: 0;
+    /*overflow-x: hidden;  Disable horizontal scroll */
+    padding-top: 0px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidenav */
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.closebtn {
+    display: none;
+    /* Will be displayed when user opens the side-menu and will be closed when they exit */
+    position: absolute;
+    top: 20px;
+    left: 14px;
+}
+
+.closebtn img {
+    width: 30px;
+    height: 30px;
+}
+
+.mobile-nav-panel-content {
+    padding: 24px 48px 120px 20px;
+}
+
+.mobile-nav-panel-list {
+    padding-left: 0;
+    padding-top: 15px;
+}
+
+.mobile-nav-panel-list li {
+    list-style: none;
+    line-height: 300%;
+    width: 230px;
+}
+
+.mobile-nav-panel-list a {
+    text-decoration: none;
+    color: #2c2f33;
+    font-size: .87rem;
+}
+
+#plus {
+    width: 12px;
+    height: 12px;
+    position:absolute;
+    right: 20px;
+    top: 72px;
+}
+
+
+/* Start of drop down menu */
+
+/* End of Onclick of menu = side panel */
 
     /* End of header rules */
 }
