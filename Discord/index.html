@@ -5,105 +5,160 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel='stylesheet' href='./style.css'>
+    <link rel='stylesheet' href='./Resources/css/style.css'>
+    <script type='text/javascript' src='./Resources/js/mobile-nav-panel.js'></script>
     <title>Discord | Your Place to Talk and Hang Out</title>
 </head>
 
 <body>
     <header>
-        <nav class='nav-bar'>
-            <div id='nav-logo'>
-                <a href='https://discord.com/'><img src='./Resources/Discord-nav-logo.jpg'></a>
+        <div class='header'>
+            <div class='desktop-nav'>
+                <img id='nav-logo' src='./Resources/Discord-nav-logo.jpg'>
+                <ul id='nav-links'>
+                    <li><a href='https://discord.com/download'>Download</a></li>
+                    <li><a href='https://discord.com/nitro'>Nitro</a></li>
+                    <li><a href='https://discord.com/safety'>Safety</a></li>
+                    <li><a href='https://discord.com/support'>Support</a></li>
+                </ul>
+                <a id='nav-button' href='https://discord.com/login'>Open Discord</a>
             </div>
-            <section class='nav-links'>
-                <a id='download-link' href='https://discord.com/download'>Download</a>
-                <a id='nitro-link' href='https://discord.com/nitro'>Nitro</a>
-                <a id='safety-link' href='https://discord.com/safety'>Safety</a>
-                <a id='support-link' href='https://discord.com/support'>Support</a>
-            </section>
-            <div id='open-button-link'>
-                <a id='open-button-link' href='https://discord.com/login'>Open Discord</a>
+
+            <div class='mobile-nav'>
+                <img id='mobile-nav-logo' src='./Resources/Discord-nav-logo.jpg'>
+                <div class='mobile-right'>
+                    <a id='mobile-nav-button' href='https://discord.com/login'>Open Discord</a>
+                    <a onclick="openNav()"><img id='mobile-menu-icon' src='./Resources/Menu Icon.png'></a>
+                </div>
             </div>
+        </div>
         </nav>
+
+        <div class='mobile-nav-panel-wrapper' id='mobile-nav-side-panel'>
+            <a class="closebtn" id='exit-button' onclick="closeNav()"><img
+                    src='../Responsive Discord/Resources/x-svgrepo-com.svg'></a>
+            <div class='mobile-nav-panel-content'>
+                <img id='black-mobile-nav-logo' src='../Responsive Discord/Resources/Black-mobile-nav-logo.PNG'>
+
+                <div id='divider'></div>
+
+                <ul class='mobile-nav-panel-list'>
+                    <li><a href='https://discord.com/'>Home</a></li>
+                    <li><a href='https://discord.com/download'>Download</a></li>
+                    <li><a href='https://discord.com/nitro'>Nitro</a></li>
+                    <li id='mobile-nav-panel-safety'><a href='https://discord.com/safety'>Safety</a><img id='caret'
+                            src='../Responsive Discord/Resources/caret-right-svgrepo-com.svg'></li>
+                    <li id='mobile-nav-panel-mod'><a href='https://discord.com/moderation'>Mod Academy</a><img
+                            id='caret' src='../Responsive Discord/Resources/caret-right-svgrepo-com.svg'></li>
+                    <li><a href='https://discord.com/support'>Support</a></li>
+                </ul>
+            </div>
+            <a id='mobile-nav-panel-download-button'
+                href='https://discord.com/api/downloads/distributions/app/installers/latest?channel=stable&platform=win&arch=x86'>Download
+                from App Store</a>
+        </div>
+
         <div class='header-content'>
-            <img class='imagine-imgd' src='./Resources/Imagine.jpg'></i>
-            <p class='imagine-p'>...where you can belong to a school club, a gaming group, or a worldwide art
-                community.<br>
-                Where just you and a handful of friends can spend time together. A place that makes it easy<br>
+            <h1 id='imagine-h1'>IMAGINE A PLACE...</h1>
+            <p id='imagine-p'>where you can belong to a school club, a gaming group, or a worldwide art
+                community.
+                Where just you and a handful of friends can spend time together. A place that makes it easy
                 to talk every day and hang out more often.</p>
             <br>
             <div class='buttons'>
-                <a class='download-windows-button'
-                    href='https://discord.com/api/downloads/distributions/app/installers/latest?channel=stable&platform=win&arch=x86'><img
-                        id='download-icon' src='./Resources/Download.svg'>Download
+                <a class='download-button' id='windows-download'
+                    href='https://discord.com/api/downloads/distributions/app/installers/latest?channel=stable&platform=win&arch=x86'>Download
                     for Windows</a>
-                <a class='open-browser' href='https://discord.com/login'>Open Discord in your browser</a>
+                <a class='download-button' id='appstore-download'
+                    href='https://discord.com/api/downloads/distributions/app/installers/latest?channel=stable&platform=win&arch=x86'>Download
+                    from App Store</a>
+                <a class='open-browser' id='browser-button' href='https://discord.com/login'>Open Discord in your
+                    browser</a>
+
             </div>
+            <img id='mobile-foreground' src='./Resources/Banana.png'>
         </div>
     </header>
 
-    <section class='content' id='block1'>
-        <div class='invite-image'>
-            <img class='invite-img' src='Resources/Discord-study-group.svg'>
+    <div class='content-container' id='block-1'>
+        <div class='content'>
+            <div class='image-container'>
+                <img id='block-1-image' src='./Resources/Discord-study-group.svg'>
+            </div>
+            <div class='text-container'>
+                <h2 id='text-header'>Create an invite-only place where you belong</h2>
+                <p id='text-p'>Discord servers are organized into topic-based channels
+                    where you can collaborate, share and just talk about
+                    your day without clogging up a group chat.</p>
+            </div>
         </div>
-        <div class='invite-text'>
-            <h1 class='content-h1'>Create an <br> invite-only <br> place where you <br> belong</h2>
-                <p class='content-p'>Discord servers are organized into topic- <br> based channels where you can
-                    collaborate, <br> share, and just talk about your day without <br> clogging up a group chat.</p>
-        </div>
-    </section>
+    </div>
 
-    <section class='content' id='block2'>
-        <div class='voice-text'>
-            <h1 class='content-h1'>Where<br> hanging <br> out is easy</h1>
-            <p class='content-p'>Grab a seat in a voice channel when you're <br>
-                free. Friends in your server can see you're <br>
-                around and instantly pop in to talk without <br>
-                having to call.</p>
+    <div class='content-container' id='block-2'>
+        <div class='content'>
+            <div class='text-container' id='block-2-text-container'>
+                <h2 id='text-header'>Where hanging out is easy</h2>
+                <p id='text-p'>Grab a seat inn a voice channel when you're
+                    free. Friends in your server can see you're around and instantly
+                    pop in to talk without having to call.
+                </p>
+            </div>
+            <div class='image-container'>
+                <img id='block-2-image' src='./Resources/voice-image.svg'>
+            </div>
+            <div class='mobile-text-container'>
+                <h2 id='text-header'>Where hanging out is easy</h2>
+                <p id='text-p'>Grab a seat inn a voice channel when you're
+                    free. Friends in your server can see you're around and instantly
+                    pop in to talk without having to call.
+                </p>
+            </div>
         </div>
-        <div class='voice-image'>
-            <img src='./Resources/Voice-image.svg'>
-        </div>
-    </section>
+    </div>
 
-    <section class='content' id='block3'>
-        <div class='community-img'>
-            <img class='community-image' src='./Resources/Community-img.svg'>
+    <div class='content-container' id='block-3'>
+        <div class='content'>
+            <div class='image-container'>
+                <img id='block-3-image' src='./Resources/Community-img.svg'>
+            </div>
+            <div class='text-container'>
+                <h2 id='text-header'>From a few to a fandom</h2>
+                <p id='text-p'>Get any community running with moderation tools
+                    and custom member access. Give members special powers, set up
+                    private channels, and more.
+                </p>
+            </div>
         </div>
-        <div class='community-text'>
-            <h1 class='content-h1'>From few to a <br>fandom</h1>
-            <p class='content-p'>Get any community running with moderation<br>
-                tools and custom member access. Give <br>
-                members special powers, set up private<br>
-                channels, and more.</p>
-        </div>
-    </section>
+    </div>
 
-    <section id='block4'>
+
+    <div class='content-container' id='block-4'>
         <div class='call-text'>
-            <h1 class='content-h1 content4-h1'>RELIABLE TECH FOR STAYING CLOSE</h1>
-            <p class='content-p content4-p '>Low-latency voice and video feels like you're in the same room. Wave hello
+            <h2 id='block-4-text-header'>RELIABLE TECH FOR STAYING CLOSE</h2>
+            <p id='block-4-text-p'>Low-latency voice and video feels like you're in the same room. Wave hello
                 over video,
                 watch friends stream their<br>
                 game, or gather up and have a drawing session with screen share</p>
         </div>
-        <div class='call-img'>
-            <img class='call-image' src='./Resources/Call-image.svg'>
-        </div>
-        <div class='ready-img'>
-            <img class='ready-image' src='./Resources/Ready-txt.png'>
-        </div>
-        <div class='download-button'>
-            <a class='download-windows'
-                href='https://discord.com/api/downloads/distributions/app/installers/latest?channel=stable&platform=win&arch=x86'>Download
-                for Windows</a>
-        </div>
-    </section>
-    </main>
+        <img id='block-4-call-image' src='./Resources/Call-image.svg'>
+        <img id='block-4-ready-image' src='./Resources/Ready-txt.png'>
+        <a class='download-windows' href=''>Download for Windows</a>
+        <a class='download-windows' id='appstore-download-purple' href=''>Download from App Store</a>
+    </div>
 
-    <div class='discord-footer'>
+
+    <div class='footer'>
         <div class='footer-content'>
-            <img class='imagine-a-footer' src='./Resources/Imagine-a-place-footer.png'>
+            <div class='footer-flex-box'>
+                <img class='imagine-a-footer' src='./Resources/Imagine-a-place-footer.png'>
+                <a href='https://twitter.com/discord'><img id='insta-logo' src='./Resources/Insta-logo.PNG'></a>
+                <a href='https://www.instagram.com/discord/'><img id='twitter-logo'
+                        src='./Resources/Twitter-logo.PNG'></a>
+                <a href='https://www.facebook.com/discord/'><img id='facebook-logo'
+                        src='./Resources/Facebook-logo.PNG'></a>
+                <a href='https://www.youtube.com/discord/'><img id='youtube-logo'
+                        src='./Resources/Youtube-logo.PNG'></a>
+            </div>
             <ul class='product-list footer-list'>
                 <li id='list-head'>Product</li>
                 <a href='https://discord.com/download'>
@@ -181,11 +236,14 @@
             </ul>
         </div>
     </div>
-    <div class='bottom-footer'>
-        <img class='footer-logo' src='./Resources/Footer-logo.png'>
-        <a class='footer-open-button' href='https://discord.com/register'>Sign up</a>
-    </div>
 
+    <div class='bottom-footer'>
+        <div class='bottom-footer-content'>
+            <img class='footer-logo' src='./Resources/Footer-logo.png'>
+            <a class='footer-open-button' href='https://discord.com/register'>Open Discord</a>
+        </div>
+    </div>
+    </main>
 </body>
 
 </html>
